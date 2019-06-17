@@ -1,0 +1,24 @@
+{
+    "name": "Hippity_Hoppity_App",
+    "version": "0.0.1",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "test": "jest",
+        "start": "node app.js",
+        "lint": "eslint ./**/*.js --fix"
+    },
+    "author": "Cuara Gardiner and Frances Bromley",
+    "license": "ISC",
+    "dependencies": {
+        "shelljs": "^0.8.3"
+    },
+    "devDependencies": {
+        "eslint": "^4.9.0",
+        "eslint-config-airbnb": "^16.1.0",
+        "eslint-plugin-import": "^2.7.0",
+        "eslint-plugin-jsx-a11y": "^6.0.2",
+        "eslint-plugin-react": "^7.4.0",
+        "jest": "^23.1.0"
+    }
+}
