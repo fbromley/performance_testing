@@ -115,13 +115,13 @@
         </hashTree>
         <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="JSR223 Sampler" enabled="true">
           <stringProp name="cacheKey">true</stringProp>
-          <stringProp name="filename"></stringProp>
+          <stringProp name="filename">C:/Extra_curric/SWT - Performance test/generator.jar</stringProp>
           <stringProp name="parameters"></stringProp>
           <stringProp name="script">var shell = require(&apos;shelljs&apos;);
 shell.exec(&apos;java -jar generator.jar generate --max-rows=100 --allow-untyped-fields --replace profile.json output.csv&apos;, (code, stdout, stderr) =&gt; {
     console.log(stdout);
     console.log(&apos;Exit code:&apos;, code);
-}) ;</stringProp>
+});</stringProp>
           <stringProp name="scriptLanguage">javascript</stringProp>
         </JSR223Sampler>
         <hashTree>
