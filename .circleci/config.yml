@@ -9,11 +9,11 @@ jobs:
       - run: npm install 
       - run: npm test
       - run: 
-          name: Save test results 
           command: | 
             mkdir -p ~/test-results
-            find . -type f -regex ".*/results/*.csv" -exec cp {} ~/test-results/ \;
           when: always
+      - save_test_results: 
+          path: /results
       - store_test_results: 
           path: ~/test-results
       - store_artifacts: 
