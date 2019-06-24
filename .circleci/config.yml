@@ -7,7 +7,7 @@ jobs:
       - checkout
       - setup_remote_docker
       - run: npm install 
-      - run: npm start
+      - run: npm test
       - run: 
           name: Save test results 
           command: | 
@@ -15,6 +15,6 @@ jobs:
             find . -type f -regex "*.csv" -exec cp {} ~/test-results \;
           when: always
       - store_test_results: 
-          path: /results/test_results
+          path: /test_results
       
 
