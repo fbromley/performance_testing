@@ -7,5 +7,6 @@ jobs:
     steps: 
       # - run: npm install 
       # - run: npm start  
+      - setup_remote_docker
       - run: docker run --rm fbromley/data-helix-performance-docker:0.0.1 generate --max-rows=100 --allow-untyped-fields --replace --profile-file=profile.json --output-path=output.csv
 
