@@ -15,8 +15,8 @@ jobs:
             find . -type f -regex ".*/results/*.csv" -exec cp {} ~/test-results/ \;
           when: always
       - store_test_results: 
-          path: ~/test_results
+          path: ~/test-results
       - store_artifacts: 
-          path: ~/test_results
+          path: ~/test-results
       
 
