@@ -2,9 +2,10 @@ version: 2.0
 jobs: 
   build: 
     docker: 
-      - image: fbromley/data-helix-performance-docker:0.0.1
       - image: circleci/node
+      # - image: fbromley/data-helix-performance-docker:0.0.1
     steps: 
-      - run: npm install 
-      - run: npm start  
+      # - run: npm install 
+      # - run: npm start  
+      - run: docker run --rm fbromley/data-helix-performance-docker:0.0.1 generate --max-rows=100 --allow-untyped-fields --replace --profile-file=profile.json --output-path=output.csv
 
