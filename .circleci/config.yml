@@ -3,8 +3,7 @@ jobs:
   build: 
     machine: true 
     working_directory: ../
-    steps: 
-      - checkout
+    steps:
       - run: npm install
       - run: npm start
 
