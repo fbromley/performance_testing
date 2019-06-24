@@ -11,11 +11,8 @@ jobs:
       - run: 
           command: | 
             mkdir -p ~/test-results
-          when: always
-      - save_test_results: 
-          path: /results
       - store_test_results: 
-          path: ~/test-results
+          path: /results
       - store_artifacts: 
           path: ~/test-results
       
