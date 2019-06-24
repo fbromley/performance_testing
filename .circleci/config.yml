@@ -1,8 +1,9 @@
-version: 2 
+version: 2.0 
 jobs: 
   build: 
-    machine: true
-    steps:
-      - run: npm install
-      - run: npm start
+    docker: 
+      - image: fbromley/data-helix-performance-docker:0.0.1
+    steps: 
+      - run: npm install 
+      - run: npm start  
 
