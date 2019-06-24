@@ -1,8 +1,7 @@
 version: 2 
 jobs: 
   build: 
-    machine: true 
-    working_directory: /performance_testing
+    machine: true
     steps:
       - run: npm install
       - run: npm start
