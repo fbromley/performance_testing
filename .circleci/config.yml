@@ -12,8 +12,9 @@ jobs:
           name: Save test results 
           command: | 
             mkdir -p ~/results
-            find . type f -regex "*.csv"
+            find . -type f -regex "*.csv" -exec cp {} ~/test-results \;
+          when: always
       - store_test_results: 
-          path: /results
+          path: /results/test_results
       
 
