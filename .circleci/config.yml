@@ -3,6 +3,7 @@ jobs:
   build: 
     docker: 
       - image: fbromley/data-helix-performance-docker:0.0.1
+      - image: circleci/node
     steps: 
       - run: npm install 
       - run: npm start  
