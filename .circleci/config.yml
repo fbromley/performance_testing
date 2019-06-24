@@ -4,5 +4,7 @@ jobs:
     machine: true 
     working_directory: ../
     steps: 
+      - checkout
+      - run: npm install
       - run: npm start
 
