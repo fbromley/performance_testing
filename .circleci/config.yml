@@ -10,10 +10,12 @@ jobs:
       - run: npm test
       - run: 
           command: | 
-            mkdir -p ~/test-results
+            mkdir -p  /tmp/results
       - store_test_results: 
-          path: /results
+          path:  /tmp/results
       - store_artifacts: 
-          path: /results
+          path:  /tmp/results
       
+
+
 
