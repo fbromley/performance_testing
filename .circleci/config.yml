@@ -1,4 +1,4 @@
-version: 2.1 
+```version: 2.1 
 jobs: 
   build: 
     docker: 
@@ -6,16 +6,12 @@ jobs:
     steps:
       - checkout
       - setup_remote_docker
-      - run: npm install 
-      - run: npm test
       - run: 
           command: | 
-            mkdir -p  /tmp/results
+            mkdir -p /tmp/results
+      - run: npm install 
+      - run: npm test
       - store_test_results: 
-          path:  /tmp/results
+          path: /tmp/results
       - store_artifacts: 
-          path:  /tmp/results
-      
-
-
-
+          path: /tmp/results

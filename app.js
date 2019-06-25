@@ -14,7 +14,7 @@ const runTest = (mode) => {
     var difference = (endTime - startTime)/1000;
     console.log("Running time is: " + difference);
     console.log(process.cwd());
-    fs.writeFile(path.join(".", "results", `${mode}${Date.now()}.json`), difference, function(err) {
+    fs.writeFile(path.join(".", "/tmp/results", `${mode}${Date.now()}.json`), difference, function(err) {
         if(err) {
             return console.log(err);
         }
