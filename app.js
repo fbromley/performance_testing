@@ -25,3 +25,5 @@ const runTest = (mode) => {
 buildDataHelix();
 runTest("generate");
 runTest("violate");
+runTest("interesting");
+runTest("random");
